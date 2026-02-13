@@ -16,7 +16,7 @@
 
     <script>
     (async function() {
-        const { text } = await( await fetch(`/api/http1`)).text();
+        const text = await( await fetch(`/api/http1`)).text();
         document.querySelector('#name').textContent = text;
     }());
     </script>
